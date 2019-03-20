@@ -1,0 +1,556 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  resize: none;
+  overflow: visible;
+}
+
+body{
+  font-family: 'Oswald', sans-serif;
+}
+
+footer{
+  padding: 10px;
+}
+
+/*navigation*/
+.nav{
+  position: fixed;
+  z-index: 999;
+  min-width: 100%;
+}
+
+.nav a{
+  font-family: 'Nobile', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0px;
+    height: 70px;
+    background-color: rgba(10, 11, 12, 0.2);
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+   padding-top: 40px;
+}
+
+li a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*Login sign up*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px 0px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-group label{
+  margin-left: 10px;
+}
+
+.panel{
+  padding-top: 2px;
+  height: 100%;
+  width: 100%;
+  background-color: #474e5d;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 100px;
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+#signUpTitle{
+  font-size: 30px;
+  text-align: center;
+}
+
+.animate {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.signLogBtn{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_signup_form_modal*/
+
+#header{
+  margin: 0;
+  padding: 0;
+}
+
+video{
+  width: 100%;
+}
+
+.overlay-desc {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; left: 0;
+  padding-top: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-desc p{
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  margin-left: 47%;
+}
+
+#main{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Nobile', sans-serif;
+  font-size: 9vw;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2, h3{
+  font-family: 'Bahiana', cursive;
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+h4{
+  font-family: 'Bahiana', cursive;
+  font-size: 80px;
+}
+
+p{
+  text-align: left;
+}
+
+.text p{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#about{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-right: 24%;
+  margin-top: 10%;
+}
+
+#explantion{
+  height: 120px;
+  overflow: hidden;
+  width: 50%;
+}
+
+#explantion img{
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+
+#where{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#imageSection img{
+  height: 350px;
+  width: auto;
+}
+
+#imageSection{
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Overlay */
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+
+.container .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  max-width: 100%;
+  margin: 0px;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h4{
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+#decide{
+  margin-top: 50px;
+}
+
+#three{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+#three img{
+  max-height: 250px;
+  width: auto;
+  overflow: hidden;
+}
+
+.grow {
+  transition: all .5s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.3);
+}
+
+.placesContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.placesContent {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+}
+
+.placesContent .placesContent-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: auto;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.placesContent:hover .placesContent-overlay{
+  opacity: 1;
+}
+
+.placesContent-image{
+  width: 100%;
+}
+
+.placesContent-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.placesContent:hover .placesContent-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.placesContent-details h3{
+  color: #fff;
+  font-weight: 500;
+}
+
+
+/*Quiz*/
+.quiz{
+ margin-top: 50px;
+ margin-bottom: 30px;
+ text-align: center;
+}
+.quizContent p{
+  text-align: center;
+  font-size: 20px;
+}
+
+.quizContent h2{
+  font-size: 60px;
+}
+
+.quizContent{
+  text-align: center;
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  padding: 30px 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow:auto;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 25px;
+}
+
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+  font-size: 25px;
+}
+
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.question{
+  margin-bottom: 20px;
+}
+
+.answers {
+  text-align: left;
+  display: inline-block;
+}
+
+.answers form{
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+input[type="radio"] {
+  display: inline;
+}
+
+form{
+  width: 100%;
+}
+
+button{
+	font-size: 15px;
+	background-color: rgb(86,50,145);
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover{
+	background-color: rgb(214, 113, 247);
+}
+
+.imageSize img{
+  width: 400px;
+  height: auto;
+}
+
+.imageSize h4{
+  font-size: 70px;
+}
+
+/*signup login */
+.signUpLoginButton{
+  font-size: 15px;
+	background-color: rgb(86,50,145);
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.signUpLoginButton:hover{
+	background-color: rgb(214, 113, 247);
+}
+
+/*User page*/
+
+.tablink {
+ background-color: #555;
+ color: white;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ font-size: 17px;
+ width: 50%;
+ font-family: 'Oswald', sans-serif;
+}
+
+.tablink:hover {
+ background-color: #777;
+}
+
+.tabcontent {
+ color: white;
+ display: none;
+ padding: 100px 20px;
+ height: 400px;
+ font-family: 'Oswald', sans-serif;
+}
+
+#Home {background-color: rgb(86,50,145);}
+#News {background-color: rgb(19, 98, 99);}
+
+#suggest{
+  width: 100%;
+}
+
+#suggest img{
+  width: auto;
+  height: 400px;
+}
+
+.align{
+  display: flex;
+  justify-content: center;
+}

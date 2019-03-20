@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/stylehomepage.css">
+    <link href="https://fonts.googleapis.com/css?family=Bahiana|Oswald" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="nav">
+     <ul>
+       <li><a href="../index.html">Home</a></li>
+       <li><a href="../index.html#quiz">Destination quiz</a></li>
+       <li><a href="userPage.html">Your favourites</a></li>
+     </ul>
+    </div>
+
+   <div id="header">
+     <video loop autoplay>
+       <source src="../vid/waves.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+       </video>
+       <div class="overlay-desc">
+        <h1>Welcome</h1>
+       </div>
+       <div id="about" class="overlay-desc">
+        <p>To your favourite destinations.</p>
+       </div>
+   </div>
+
+<button class="tablink" onclick="openPage('Home', this, 'rgb(86,50,145)')" >Favourites</button>
+<button class="tablink" onclick="openPage('News', this, 'rgb(19, 98, 99)')" id="defaultOpen">More to consider</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Favourites</h3>
+  <p>Your dream destinations</p>
+  <div id="collection">
+
+  </div>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>Recommended destinations</h3>
+  <div id="suggest">
+
+    <script type="text/javascript">
+    var images = [];
+    index = 0;
+
+    images[0] = "<div class='align'><div class='container'><div class='content'><div class='content-overlay'></div><a class='center' href ='destinations/newyork.html'><img class='content-image' src='../images/newyork.jpg'><div class='content-details fadeIn-bottom'><h4 class='content-title'>Why not try <br>New York!</h4></div></div></div></div></a>";
+
+    images[1] = "<div class='align'><div class='container'><div class='content'><div class='content-overlay'></div><a class='center' href ='destinations/destinations.html'><img class='content-image' src='../images/amsterdam.jpg'><div class='content-details fadeIn-bottom'><h4 class='content-title'>Why not try <br>Amsterdam!</h4></div></div></div></div></a>";
+
+    images[2] = "<div class='align'><div class='container'><div class='content'><div class='content-overlay'></div><a class='center' href ='destinations/barbados.html'><img class='content-image' src='../images/Barbados.png'><div class='content-details fadeIn-bottom'><h4 class='content-title'>Why not try <br>Barbados!</h4></div></div></div></div></a>";
+
+    images[3] = "<div class='align'><div class='container'><div class='content'><div class='content-overlay'></div><a class='center' href ='destinations/iceland.html'><img class='content-image' src='../images/Iceland.jpg'><div class='content-details fadeIn-bottom'><h4 class='content-title'>Why not try <br>Iceland!</h4></div></div></div></div></a>";
+
+    images[4] = "<div class='align'><div class='container'><div class='content'><div class='content-overlay'></div><a class='center' href ='destinations/japan.html'><img class='content-image' src='../images/Japan.JPG'><div class='content-details fadeIn-bottom'><h4 class='content-title'>Why not try <br>Japan!</h4></div></div></div></div></a>";
+
+    images[5] = "<div class='align'><div class='container'><div class='content'><div class='content-overlay'></div><a class='center' href ='destinations/newzealand.html'><img class='content-image' src='../images/new-zealand.jpg'><div class='content-details fadeIn-bottom'><h4 class='content-title'>Why not try <br>New Zealand!</h4></div></div></div></div></a>";
+
+    images[6] = "<div class='align'><div class='container'><div class='content'><div class='content-overlay'></div><a class='center' href ='destinations/paris.html'><img class='content-image' src='../images/Paris.jpg'><div class='content-details fadeIn-bottom'><h4 class='content-title'>Why not try <br>Paris!</h4></div></div></div></div></a>";
+
+    images[7] = "<div class='align'><div class='container'><div class='content'><div class='content-overlay'></div><a class='center' href ='destinations/spain.html'><img class='content-image' src='../images/spain.jpg'><div class='content-details fadeIn-bottom'><h4 class='content-title'>Why not try <br>Spain!</h4></div></div></div></div></a>";
+
+    images[8] = "<div class='align'><div class='container'><div class='content'><div class='content-overlay'></div><a class='center' href ='destinations/thailand.html'><img class='content-image' src='../images/thailand.jpg'><div class='content-details fadeIn-bottom'><h4 class='content-title'>Why not try <br>Thailand!</h4></div></div></div></div></a>";
+
+    index = Math.floor(Math.random() * images.length);
+    document.write(images[index]);
+    </script>
+  </div>
+</div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+  <script src="https://da189i1jfloii.cloudfront.net/js/kinvey-html5-sdk-3.10.2.min.js"></script>
+  <script src="../js/userPage.js"></script>
+  <script src="../js/kinvey.js"></script>
+  </body>
+</html>
